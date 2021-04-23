@@ -1,0 +1,12 @@
+
+version: "3"
+services:
+  python:
+    restart: always
+    tty: true
+    build: .
+    container_name: "python3.9.4"
+    volumes:
+      - .:/workspace
+    ports:
+      - "8888:8888"
